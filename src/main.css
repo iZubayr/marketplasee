@@ -19,6 +19,7 @@
   .title-sec{
     padding: 20px 0;
     margin-bottom: 30px;
+    color: white;
     h2{
         @apply text-4xl mb-3;
     }
