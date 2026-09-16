@@ -1,0 +1,16 @@
+{
+  "scripts": {
+    "tailwind": "npx @tailwindcss/cli -i ./src/main.css -o ./src/output.css --watch",
+    "serve": "browser-sync start --server --files \"*.html, ./src/output.css\" --no-notify",
+    "dev": "concurrently \"npm run tailwind\" \"npm run serve\"",
+    "build": "npx @tailwindcss/cli -i ./src/main.css -o ./src/output.css --minify"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.3.3",
+    "tailwindcss": "^4.3.3"
+  },
+  "devDependencies": {
+    "browser-sync": "^3.0.4",
+    "concurrently": "^10.0.5"
+  }
+}

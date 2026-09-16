@@ -1,0 +1,30 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+@theme {
+  --color-blackk: #2b2b2b;
+  --color-secondary: #3b3b3b;
+  --caption--label-text: #858584;
+  --text-white: #fff;
+  --color-calltoaction: #a259ff;
+  --text-blue: #377df7;
+  --text-red: #ff7262;
+  --font-family: "Space Mono", sans-serif;
+  --font-second: "Work Sans", sans-serif;
+}
+@layer components {
+  .my-container {
+    @apply max-w-7xl mx-auto py-20;
+  }
+  .title-sec{
+    padding: 20px 0;
+    margin-bottom: 30px;
+    h2{
+        @apply text-4xl mb-3;
+    }
+    p{
+        @apply text-[22px] font-normal;
+
+    }
+  }
+}
